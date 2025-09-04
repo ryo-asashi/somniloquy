@@ -10,7 +10,7 @@ Authors@R: c(
     )
   )
 Description: This package is a personal collection of miscellaneous R functions that were developed during several study groups and personal projects. The package serves as a personal toolkit and a record of learning experiences.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
