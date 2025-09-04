@@ -3,6 +3,15 @@
 #' @description
 #' `excess_plot()` creates a mean or median excess plot as a side-effect and returns the data frame invisibly.
 #'
+#' @details
+#' `excess_plot()` generates a mean or median excess plot, which is a key tool for visually assessing the tail behavior of a distribution.
+#'
+#' Mean Excess Plot (MEP) represents the function \eqn{e(u) = \mathrm{E}[\;\mathrm{X} - u\mid\mathrm{X} > u\;]}, i.e., the average of all exceedances over a given threshold \code{u}.
+#' This plot helps in identifying the type of tail behavior.
+#' An upward trend suggests a heavy-tailed distribution, a flat trend indicates an exponential distribution, and a downward trend points to a light-tailed distribution.
+#'
+#' Median Excess Plot is similar to the MEP, but uses the median of the exceedances instead of the mean. This makes the plot more robust to outliers.
+#'
 #' @param x a numeric vector.
 #' @param method "mean" or "median".
 #' @param mode "exact" or "interpolate".
