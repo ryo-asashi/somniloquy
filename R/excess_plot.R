@@ -61,7 +61,7 @@ excess_plot <- function(
     ys[2L:n] <- mx[-n] - sx[-1L]
     us <- sx
   }
-  res <- data.frame(u = us, y = ys)
+  res <- data.frame(u = rev(us), y = rev(ys))
   if (show_plot) {
     args <- list(...)
     args[c("formula", "data")] <- NULL
