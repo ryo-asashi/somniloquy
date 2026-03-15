@@ -18,10 +18,6 @@
 #' @param show_plot logical.
 #' @param ... optional arguments to be passed to the \code{plot()} function, such as \code{main}, \code{xlab}, \code{ylab}, \code{col}, etc.
 #'
-#' @returns
-#' `excess_plot()` returns a data frame containing the data used for plotting.
-#' If \code{show_plot} is \code{TRUE}, the data frame is returned invisibly.
-#'
 #' @examples
 #' # Create a mean excess plot
 #' excess_plot(x = rexp(100))
@@ -31,6 +27,9 @@
 #'
 #' # Customize the plot appearance
 #' excess_plot(x = rexp(100), col = "maroon", main = "Mean Excess Plot")
+#' @returns
+#' `excess_plot()` returns a data frame containing the data used for plotting.
+#' If \code{show_plot} is \code{TRUE}, the data frame is returned invisibly.
 #'
 #' @export
 #'

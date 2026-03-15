@@ -48,5 +48,4 @@ excess_data <- excess_plot(x = rexp(100), method = "median", show_plot = FALSE)
 
 # Customize the plot appearance
 excess_plot(x = rexp(100), col = "maroon", main = "Mean Excess Plot")
-
 }
