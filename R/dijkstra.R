@@ -17,6 +17,7 @@
 #' v <- c(2, 3, 4, 4)
 #' w <- c(2, 5, 1, 3)
 #' graph <- build_graph(n, u, v, w)
+#' graph
 #' @returns
 #' \code{build_graph()} returns a list containing the internal graph representation (\code{n}, \code{head}, \code{to}, \code{weight}, \code{nxt}, and \code{alloc_size}).
 #'
@@ -79,8 +80,8 @@ build_graph <- function(n, u, v, w, directed = FALSE) {
 #' w <- c(2, 5, 1, 3)
 #' graph <- build_graph(n, u, v, w)
 #'
-#' cost_from_1 <- dijkstra(graph, start_node = 1)
-#' cost_from_4 <- dijkstra(graph, start_node = 4)
+#' dijkstra(graph, start_node = 1)
+#' dijkstra(graph, start_node = 4)
 #' @returns
 #' \code{dijkstra()} returns a numeric vector of length \code{graph$n} containing the shortest distances.
 #'
